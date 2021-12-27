@@ -134,18 +134,18 @@ const starts = async (OLDUSER = new WAConnection()) => {
 	OLDUSER.logger.level = 'warn'
 	OLDUSER.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	console.log(color(figlet.textSync('OLDUSER BOT', {
+	console.log(color(figlet.textSync('NEHA'S BOT', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('\n> YT CHANNEL: OLDUSER ','silver'))
-console.log(color('> GITHUB: Jetushack1 ','silver'))
-console.log(color('> WA NUMBER: +919685736029 ','silver'))
+	console.log(color('\n> YT CHANNEL:  ','silver'))
+console.log(color('> GITHUB: ','silver'))
+console.log(color('> WA NUMBER: +92 334 4646834 ','silver'))
 console.log(color('  OLDUSER BOT Inc. 2021','mediumseagreen'))
-	OLDUSER.browserDescription = [ 'MODIFIED  V2 BY  OLDUSER', 'FIREFOX', '95' ]
+	OLDUSER.browserDescription = [ 'MODIFIED  V2 BY  NEHA', 'EDGE', '101' ]
 
 	OLDUSER.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN THE QR'))
