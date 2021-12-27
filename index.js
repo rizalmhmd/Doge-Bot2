@@ -141,11 +141,11 @@ const starts = async (OLDUSER = new WAConnection()) => {
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('\n> YT CHANNEL:  ','silver'))
-console.log(color('> GITHUB: ','silver'))
-console.log(color('> WA NUMBER: +92 334 4646834 ','silver'))
+	console.log(color('\n> YT CHANNEL:idt ','silver'))
+console.log(color('> GITHUB:idt ','silver'))
+console.log(color('> WA NUMBER: +923344646834 ','silver'))
 console.log(color('  OLDUSER BOT Inc. 2021','mediumseagreen'))
-	OLDUSER.browserDescription = [ 'MODIFIED  V2 BY  NEHA', 'EDGE', '101' ]
+	OLDUSER.browserDescription = [ 'MODIFIED  V2 BY  NEHA', 'EDGE', '11' ]
 
 	OLDUSER.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN THE QR'))
