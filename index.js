@@ -18,7 +18,7 @@ const encodeUrl = require('encodeurl')
 const chalk = require('chalk')
 const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
 const {  location } = MessageType
-const settings = JSON.parse(fs.readFileSync('./settings.json'))
+const settings = JSON.parse(fs.readFileSync('./.settings.json'))
 baterai = 'unknown'
 charging = 'unknown'
 
