@@ -134,7 +134,7 @@ const starts = async (OLDUSER = new WAConnection()) => {
 	OLDUSER.logger.level = 'warn'
 	OLDUSER.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	console.log(color(figlet.textSync('NEHA'S BOT', {
+	console.log(color(figlet.textSync('NEHAS BOT', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
