@@ -97,6 +97,7 @@ const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/nsfw.json'))
 const mute = JSON.parse(fs.readFileSync('./database/mute.json'))
 const settings = JSON.parse(fs.readFileSync('./.settings.json'))
+const settingss = JSON.parse(fs.readFileSync('./settings.json'))
 const bot = JSON.parse(fs.readFileSync('./.bot.json'))
 const _registered = JSON.parse(fs.readFileSync('./database/registered.json'))
 const kickarea = JSON.parse(fs.readFileSync('./database/kickarea.json'))
@@ -109,9 +110,9 @@ ky_ttt = []
 tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"]
 cmhit = []
 fake = "OLDUSER BOT";
-autorespon = settings.AutoRespon
-playmusic = settings.AutoMusic
-antidelete = settings.AntiDelete
+autorespon = settingss.AutoRespon
+playmusic = settingss.AutoMusic
+antidelete = settingss.AntiDelete
 botlink = bot.botlink
 menusimpel = false
 autojoin = true
@@ -125,13 +126,16 @@ publik = true
 bugc = true
 waktuafk = 'Nothing'
 alasanafk = 'Nothing'
-BOTName = settings.BotName
+BOTName = settingss.BotName
 NomorOwner = settings.NomorOwner
 NomorOwner2 = settings.NomorOwner2
-NamaOwner = settings.NamaOwner
-pulsa = settings.Pulsa
-dana = settings.Dana
-ovo = settings.Ovo
+NamaOwner = settingss.NamaOwner
+NomorOwner = settingss.NomorOwner
+NomorOwner2 = settingss.NomorOwner2
+NamaOwner = settingss.NamaOwner
+pulsa = settingss.Pulsa
+dana = settingss.Dana
+ovo = settingss.Ovo
 botlink = bot.botlink
 multi = true
 nopref = false
@@ -1234,12 +1238,11 @@ ${z}🐶 ${prefix}downloadmenu${z}
 ${z}🐶 ${prefix}funmenu${z}
 ${z}🐶 ${prefix}nsfwmenu${z}
 ${z}🐶 ${prefix}animemenu${z}
-    watch how you can install this BOT in your whatsapp: https://youtu.be/zXvwqA8LvTw
+    watch how you can install this BOT in your whatsapp: https://youtu.be/
 ┗━━━━━━━━━━━━━━━━━`
 buttons = [
-{buttonId:`scbot`, buttonText: {displayText: 'BOT SCRIPT🔖'}, type: 1},
-{buttonId:`botlink`, buttonText: {displayText: 'BOT LINK👤'}, type: 1}
-
+{buttonId:`botlink`, buttonText: {displayText: 'BOT SCRIPT🔖'}, type: 1},
+{{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER👤'}, type: 1}
 ]
 const menuu = {
     contentText: `${tod}`,
@@ -3212,6 +3215,7 @@ break
 case 'sc':
 case 'script':
 case 'scbot':
+case 'botlink'
 anu = `──────────────────
 NOTE : _DO NOT SELL BOT SCRIPT_
 ──────────────────
