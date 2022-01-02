@@ -3215,8 +3215,8 @@ break
 case 'sc':
 case 'script':
 case 'scbot':
-case 'botlink'
-anu = `──────────────────
+case 'botlink':
+anu = ──────────────────
 NOTE : _DO NOT SELL BOT SCRIPT_
 ──────────────────
 *👇SCRIPT GITHUB LINK👇*
