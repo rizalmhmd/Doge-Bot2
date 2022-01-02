@@ -1242,7 +1242,7 @@ ${z}🐶 ${prefix}animemenu${z}
 ┗━━━━━━━━━━━━━━━━━`
 buttons = [
 {buttonId:`botlink`, buttonText: {displayText: 'BOT SCRIPT🔖'}, type: 1},
-{{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER👤'}, type: 1}
+{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER👤'}, type: 1}
 ]
 const menuu = {
     contentText: `${tod}`,
